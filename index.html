@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge Decodificador de Texto</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="box-left">
+        <img src="./assets/logo.png" class="img-logo-alura" alt="Logo Alura" />
+
+        <textarea id="messageUser" name="messageUser" placeholder="Digite seu texto aqui:"></textarea>
+
+        <div class="container-buttons">
+          <button class="btn-encrypt" onclick="encrypt()">Criptografar</button>
+          <button class="btn-decrypt" onclick="decrypt()">Descriptografar</button>
+        </div>
+      </section>
+
+      <section class="box-right">
+        <div class="title-header">
+          <h1>Mensagens Codificadas</h1>
+        </div>
+
+        <div class="container-output-msg"> 
+          <img id="imgNothingFound" src="./assets/mulher.svg" class="img-nothing-found" alt="Nada Encontrado"/>
+
+          <p id="textResult" class="text-result">Sua mensagem aparecerá aqui!</p>
+
+          <button id="btnCopyMsg" class="btn-copy-msg" onclick="copyMsg()">Copiar</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
